@@ -1,0 +1,62 @@
+/* ============================================================
+   LAYOUT â€” Sidebar, hamburger, main wrapper, footer
+   ============================================================ */
+
+.main { margin-left: var(--sidebar-width); flex: 1; min-width: 0; }
+
+/* Sidebar */
+.sidebar {
+  position: fixed; top: 0; left: 0;
+  width: var(--sidebar-width); height: 100vh;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+  display: flex; flex-direction: column;
+  z-index: 1000; transition: transform .3s ease;
+}
+.sidebar-logo { padding: 28px 24px 20px; border-bottom: 1px solid var(--sidebar-border); }
+.sidebar-logo a {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem; font-weight: 700;
+  color: var(--accent); text-decoration: none; letter-spacing: -1px;
+}
+.sidebar-nav { flex: 1; padding: 16px 0; overflow-y: auto; }
+.sidebar-nav ul { list-style: none; }
+.sidebar-nav li a {
+  display: flex; align-items: center; gap: 12px;
+  padding: 11px 24px;
+  color: var(--text-secondary); text-decoration: none;
+  font-size: .9rem; font-weight: 500;
+  border-left: 3px solid transparent; transition: all .2s;
+}
+.sidebar-nav li a i { width: 18px; text-align: center; font-size: .95rem; }
+.sidebar-nav li a:hover,
+.sidebar-nav li a.active {
+  color: var(--accent); background: var(--accent-light); border-left-color: var(--accent);
+}
+.sidebar-footer {
+  padding: 20px 24px; border-top: 1px solid var(--sidebar-border);
+  font-size: .78rem; color: var(--text-secondary);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none; position: fixed; top: 16px; left: 16px; z-index: 1100;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: 8px; width: 42px; height: 42px;
+  align-items: center; justify-content: center;
+  cursor: pointer; color: var(--text-primary);
+  font-size: 1.1rem; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.sidebar-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.3); z-index: 999;
+}
+.sidebar-overlay.active { display: block; }
+
+/* Footer */
+footer {
+  background: var(--card-bg); border-top: 1px solid var(--card-border);
+  padding: 24px 60px; text-align: center;
+  font-size: .85rem; color: var(--text-secondary);
+}
+footer span { color: var(--accent); font-weight: 600; }

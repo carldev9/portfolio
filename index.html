@@ -3,1228 +3,730 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <title>Carl Patdu Software & AI/ML Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+  <!-- HAMBURGER -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo"><a href="#home">CP.</a></div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#home" class="nav-link active" data-section="home"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#portfolio" class="nav-link" data-section="portfolio"><i class="fa-solid fa-briefcase"></i>
+            Portfolio</a></li>
+        <li><a href="#focus" class="nav-link" data-section="focus"><i class="fa-solid fa-crosshairs"></i> Focus</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience"><i class="fa-solid fa-timeline"></i>
+            Experience</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#education" class="nav-link" data-section="education"><i class="fa-solid fa-graduation-cap"></i>
+            Education</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">Software &amp; AI/ML Engineer</div>
+  </aside>
 
-  <main>
+  <!-- MAIN -->
+  <main class="main">
 
-    <!--
-      - #SIDEBAR
-    -->
+    <!-- HERO -->
+    <section id="home">
+      <!-- SVG BACKGROUND -->
+      <svg class="hero-svg-bg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"
+        xmlns="http://www.w3.org/2000/svg">
+        <!-- LEFT HALF: Healthcare -->
+        <!-- ECG/Heartbeat line -->
+        <polyline
+          points="0,200 60,200 80,200 100,120 120,280 140,200 200,200 220,200 240,160 260,240 280,200 400,200 420,200 440,130 460,270 480,200 600,200"
+          fill="none" stroke="#fca5a5" stroke-width="2.5" opacity="0.4" />
+        <!-- Large cross/plus symbol -->
+        <rect x="80" y="60" width="12" height="60" rx="4" fill="#fca5a5" opacity="0.15" />
+        <rect x="62" y="78" width="48" height="12" rx="4" fill="#fca5a5" opacity="0.15" />
+        <!-- Second cross -->
+        <rect x="460" y="300" width="10" height="50" rx="3" fill="#fca5a5" opacity="0.12" />
+        <rect x="445" y="315" width="40" height="10" rx="3" fill="#fca5a5" opacity="0.12" />
+        <!-- DNA double helix - two sine curves -->
+        <path
+          d="M150,400 C170,380 190,360 210,380 C230,400 250,420 270,400 C290,380 310,360 330,380 C350,400 370,420 390,400 C410,380 430,360 450,380 C470,400 490,420 510,400 C530,380 550,360 570,380"
+          fill="none" stroke="#5eead4" stroke-width="2" opacity="0.25" />
+        <path
+          d="M150,420 C170,440 190,460 210,440 C230,420 250,400 270,420 C290,440 310,460 330,440 C350,420 370,400 390,420 C410,440 430,460 450,440 C470,420 490,400 510,420 C530,440 550,460 570,440"
+          fill="none" stroke="#5eead4" stroke-width="2" opacity="0.25" />
+        <!-- DNA rungs -->
+        <line x1="210" y1="380" x2="210" y2="440" stroke="#5eead4" stroke-width="1.5" opacity="0.2" />
+        <line x1="270" y1="400" x2="270" y2="420" stroke="#5eead4" stroke-width="1.5" opacity="0.2" />
+        <line x1="330" y1="380" x2="330" y2="440" stroke="#5eead4" stroke-width="1.5" opacity="0.2" />
+        <line x1="390" y1="400" x2="390" y2="420" stroke="#5eead4" stroke-width="1.5" opacity="0.2" />
+        <line x1="450" y1="380" x2="450" y2="440" stroke="#5eead4" stroke-width="1.5" opacity="0.2" />
+        <!-- Pill/capsule shapes -->
+        <rect x="50" y="500" width="60" height="24" rx="12" fill="#bae6fd" opacity="0.2" />
+        <rect x="130" y="540" width="50" height="20" rx="10" fill="#bae6fd" opacity="0.18" />
+        <rect x="300" y="520" width="55" height="22" rx="11" fill="#bae6fd" opacity="0.15" />
+        <rect x="480" y="490" width="48" height="20" rx="10" fill="#bae6fd" opacity="0.18" />
+        <!-- Stethoscope outline (simplified) -->
+        <circle cx="200" cy="620" r="28" fill="none" stroke="#9ca3af" stroke-width="2" opacity="0.12" />
+        <path d="M200,592 L200,560 C200,540 220,530 240,530 L260,530" fill="none" stroke="#9ca3af" stroke-width="2.5"
+          opacity="0.12" />
+        <path d="M260,530 C270,530 278,538 278,548 C278,558 270,566 260,566 C250,566 242,558 242,548" fill="none"
+          stroke="#9ca3af" stroke-width="2.5" opacity="0.12" />
+        <!-- Large faint cross watermark -->
+        <rect x="420" y="80" width="20" height="120" rx="6" fill="#fca5a5" opacity="0.08" />
+        <rect x="380" y="120" width="100" height="20" rx="6" fill="#fca5a5" opacity="0.08" />
 
-    <aside class="sidebar" data-sidebar>
+        <!-- RIGHT HALF: EdTech (x > 600) -->
+        <!-- Graduation cap outline -->
+        <polygon points="800,180 860,210 800,240 740,210" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.2" />
+        <rect x="796" y="240" width="8" height="30" fill="#fbbf24" opacity="0.2" />
+        <line x1="800" y1="210" x2="800" y2="180" stroke="#fbbf24" stroke-width="2" opacity="0.2" />
+        <circle cx="800" cy="175" r="5" fill="#fbbf24" opacity="0.2" />
+        <!-- Open book outline -->
+        <path d="M680,340 L680,420 C680,420 720,410 750,420 L750,340 C750,340 720,330 680,340 Z" fill="none"
+          stroke="#fbbf24" stroke-width="2" opacity="0.15" />
+        <path d="M750,340 L750,420 C750,420 780,410 820,420 L820,340 C820,340 780,330 750,340 Z" fill="none"
+          stroke="#fbbf24" stroke-width="2" opacity="0.15" />
+        <line x1="750" y1="340" x2="750" y2="420" stroke="#fbbf24" stroke-width="1.5" opacity="0.15" />
+        <!-- Book lines (text) -->
+        <line x1="695" y1="360" x2="740" y2="358" stroke="#fbbf24" stroke-width="1" opacity="0.12" />
+        <line x1="695" y1="372" x2="740" y2="370" stroke="#fbbf24" stroke-width="1" opacity="0.12" />
+        <line x1="695" y1="384" x2="740" y2="382" stroke="#fbbf24" stroke-width="1" opacity="0.12" />
+        <line x1="762" y1="360" x2="808" y2="358" stroke="#fbbf24" stroke-width="1" opacity="0.12" />
+        <line x1="762" y1="372" x2="808" y2="370" stroke="#fbbf24" stroke-width="1" opacity="0.12" />
+        <line x1="762" y1="384" x2="808" y2="382" stroke="#fbbf24" stroke-width="1" opacity="0.12" />
+        <!-- Circuit board lines -->
+        <line x1="620" y1="480" x2="1200" y2="480" stroke="#818cf8" stroke-width="1.5" opacity="0.15" />
+        <line x1="620" y1="520" x2="1200" y2="520" stroke="#818cf8" stroke-width="1.5" opacity="0.12" />
+        <line x1="620" y1="560" x2="1200" y2="560" stroke="#818cf8" stroke-width="1.5" opacity="0.1" />
+        <line x1="700" y1="440" x2="700" y2="620" stroke="#818cf8" stroke-width="1.5" opacity="0.15" />
+        <line x1="780" y1="440" x2="780" y2="620" stroke="#818cf8" stroke-width="1.5" opacity="0.12" />
+        <line x1="860" y1="440" x2="860" y2="620" stroke="#818cf8" stroke-width="1.5" opacity="0.15" />
+        <line x1="940" y1="440" x2="940" y2="620" stroke="#818cf8" stroke-width="1.5" opacity="0.12" />
+        <line x1="1020" y1="440" x2="1020" y2="620" stroke="#818cf8" stroke-width="1.5" opacity="0.1" />
+        <line x1="1100" y1="440" x2="1100" y2="620" stroke="#818cf8" stroke-width="1.5" opacity="0.12" />
+        <!-- Circuit junctions -->
+        <circle cx="700" cy="480" r="4" fill="#818cf8" opacity="0.2" />
+        <circle cx="780" cy="480" r="4" fill="#818cf8" opacity="0.2" />
+        <circle cx="860" cy="520" r="4" fill="#818cf8" opacity="0.2" />
+        <circle cx="940" cy="480" r="4" fill="#818cf8" opacity="0.2" />
+        <circle cx="1020" cy="560" r="4" fill="#818cf8" opacity="0.2" />
+        <circle cx="1100" cy="520" r="4" fill="#818cf8" opacity="0.2" />
+        <circle cx="700" cy="560" r="3" fill="#818cf8" opacity="0.15" />
+        <circle cx="860" cy="480" r="3" fill="#818cf8" opacity="0.15" />
+        <circle cx="940" cy="560" r="3" fill="#818cf8" opacity="0.15" />
+        <!-- Star/sparkle shapes -->
+        <!-- Star 1 -->
+        <path d="M900,150 L905,165 L920,165 L908,174 L913,189 L900,180 L887,189 L892,174 L880,165 L895,165 Z"
+          fill="#fbbf24" opacity="0.22" />
+        <!-- Star 2 -->
+        <path d="M1050,100 L1053,110 L1063,110 L1055,116 L1058,126 L1050,120 L1042,126 L1045,116 L1037,110 L1047,110 Z"
+          fill="#fbbf24" opacity="0.25" />
+        <!-- Star 3 -->
+        <path d="M1150,200 L1153,208 L1161,208 L1155,213 L1157,221 L1150,216 L1143,221 L1145,213 L1139,208 L1147,208 Z"
+          fill="#fbbf24" opacity="0.2" />
+        <!-- Star 4 small sparkle -->
+        <path d="M670,280 L672,286 L678,286 L673,290 L675,296 L670,292 L665,296 L667,290 L662,286 L668,286 Z"
+          fill="#fbbf24" opacity="0.25" />
+        <!-- Abstract text lines (floating bars) -->
+        <rect x="640" y="660" width="120" height="8" rx="4" fill="#9ca3af" opacity="0.1" />
+        <rect x="640" y="676" width="90" height="8" rx="4" fill="#9ca3af" opacity="0.08" />
+        <rect x="640" y="692" width="105" height="8" rx="4" fill="#9ca3af" opacity="0.1" />
+        <rect x="800" y="660" width="100" height="8" rx="4" fill="#9ca3af" opacity="0.08" />
+        <rect x="800" y="676" width="130" height="8" rx="4" fill="#9ca3af" opacity="0.1" />
+        <rect x="800" y="692" width="80" height="8" rx="4" fill="#9ca3af" opacity="0.08" />
+        <rect x="980" y="660" width="110" height="8" rx="4" fill="#9ca3af" opacity="0.1" />
+        <rect x="980" y="676" width="85" height="8" rx="4" fill="#9ca3af" opacity="0.08" />
+        <rect x="980" y="692" width="120" height="8" rx="4" fill="#9ca3af" opacity="0.1" />
+      </svg>
 
-      <div class="sidebar-info">
+      <!-- HERO CONTENT -->
+      <div class="hero-content">
+        <div class="hero-left">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Carl Patdu</h1>
+          <p class="hero-subtitle">Software &amp; AI/ML Engineer</p>
+          <div class="hero-typewriter"><span id="typewriter-text"></span><span class="cursor"></span></div>
+          <p class="hero-desc">I build intelligent systems in healthcare, edtech, and the construction industry—beginning from HIPAA-compliant AI agents to adaptive learning platforms and smart infrastructure solutions.</p>
+          <div class="hero-btns">
+            <a href="#portfolio" class="btn-primary"><i class="fa-solid fa-eye"></i> View Work</a>
+            <a href="#contact" class="btn-outline"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-bento">
+            <div class="bento-card">
+              <div class="bento-num">6+</div>
+              <div class="bento-label">Years Experience</div>
+            </div>
+            <div class="bento-card">
+              <div class="bento-num">5+</div>
+              <div class="bento-label">LLM Agents Built</div>
+            </div>
+            <div class="bento-card">
+              <div class="bento-num">82%</div>
+              <div class="bento-label">RAG Accuracy Boost</div>
+            </div>
+            <div class="bento-card">
+              <div class="bento-num">91%</div>
+              <div class="bento-label">Chatbot Success Rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Carl Patdu" width="80">
-        </figure>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-header" style="position:relative">
+        <div class="section-watermark">01</div>
+        <div class="section-header-inner">
+          <p class="section-label">Get to know me</p>
+          <h2 class="section-title"><span>About Me</span></h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Software &amp; AI/ML Engineer with 6+ years of experience building intelligent, production-grade
+            systems. My work sits at the intersection of two domains I care deeply about: Healthcare AI and EdTech where
+            technology can genuinely improve lives.</p>
+          <p>I specialize in LLM agents, RAG pipelines, and agentic AI workflows using LangChain, LangGraph, and AWS
+            Bedrock. I've architected HIPAA-compliant platforms, deployed clinical automation systems, and built
+            multilingual AI storytelling experiences for children. I bring both the engineering rigor and the domain
+            empathy needed to ship AI that actually works in the real world.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">6+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">82%</div>
+            <div class="stat-label">RAG Accuracy Boost</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">91%</div>
+            <div class="stat-label">Chatbot Success Rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="info-content">
-          <h1 class="name" title="Carl Patdu">Carl Patdu</h1>
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section-alt">
+      <div class="section-header">
+        <p class="section-label">What I've built</p>
+        <h2 class="section-title"><span>Portfolio</span></h2>
+      </div>
+      <div class="portfolio-grid">
 
-          <p class="title">AI/ML & FullStack Engineer</p>
+        <!-- 1 -->
+        <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(0)" style="cursor:pointer">
+            <img src="assets/images/projects/CareFlow_1.png" alt="Healthcare Platform"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">Healthcare AI</div>
+            <div class="project-title">Healthcare Platform - CareFlow</div>
+            <div class="project-desc">End-to-end healthcare platform on AWS with HIPAA compliance, secure data
+              pipelines, and AI-assisted clinical workflows.</div>
+            <div class="project-tags"><span class="tag">React</span><span class="tag">TypeScript</span><span
+                class="tag">AWS</span><span class="tag">HIPAA</span>
+              <span class="tag">RAG</span><span class="tag">Django</span>
+            <span class="tag">Langchain</span><span class="tag">OpenAI</span><span class="tag">Lambda</span><span class="tag">Kinesis</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(0)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
+            </div>
+          </div>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+        <!-- 2 -->
+        <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(1)" style="cursor:pointer">
+            <img src="assets/images/projects/BrightRiver.png" alt="LLM Agents"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">Ecommerce AI</div>
+            <div class="project-title">Bright River</div>
+            <div class="project-desc">Brightriver.ai streamlines investment analysis by ingesting multi-format documents, generating concise reports, and enabling natural language queries. It features change tracking, undo/redo, and AI-driven insights for financial analysts.</div>
+            <div class="project-tags"><span class="tag">LangChain</span><span class="tag">OpenAI</span><span
+                class="tag">Django</span><span class="tag">Python</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(1)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:cardev.patdu@gmail.com" class="contact-link">cardev.patdu@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+63 9977116550</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">August 20, 1997</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Cabanatuan, Central Luzon, Philippines</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            As AI Engineer with 6+ years of experience transitioning from full-stack development to designing and deploying
-            AI-powered applications. Strong background in building scalable systems combined with hands-on expertise in
-            machine learning, deep learning, and generative AI. Experienced in integrating LLMs, developing intelligent APIs,
-            and deploying ML models in production environments.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Development</h4>
-
-                <p class="service-item-text">
-                  If you are looking for AI developer, a skilled AI developer is committed to delivering innovative solutions that align seamlessly with your goals, ensuring a transformative and intelligent future for your organization.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Back End Development</h4>
-
-                <p class="service-item-text">
-                  If you're looking to make your website or web app robust and resilient, don't hesitate to reach out to me at your earliest convenience. The sooner I connect, the better!
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Front End Development</h4>
-
-                <p class="service-item-text">
-                  If your goal is to craft an aesthetically pleasing UI, consider exploring other developers. However, if you're aiming for a professional and well-structured UI, you're in the right place. Welcome aboard!
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Design</h4>
-
-                <p class="service-item-text">
-                  If you have a concept in mind for your website but lack a detailed plan, no need to worry. Provide me with a well-documented specification, and I'm ready to bring your vision to life through web design and development!
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Great dev to work with. Very skilled and talented in Java and
-                    python and look forward to working with him in the future.
-                    Highly Recommend him!                            
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>                    
-                    Carl! it a very talented developer. He has great
-                    communication skills and the unique ability to break down
-                    complex topics down into easy to understand terms. I highly
-                    recommend Denys for all of your developer needs.
-                            
-                  </p>
-                </div>
-
-              </div>
-            </li>
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+          </div>
         </div>
 
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
+        <!-- 3 -->
+        <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(2)" style="cursor:pointer">
+            <img src="assets/images/projects/LeadRescue.jpg" alt="RAG Pipeline"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Makati</h4>
-
-              <span>2014 - 2018</span>
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <div class="project-body">
+            <div class="project-cat">AI analyze cusomer call</div>
+            <div class="project-title">Lead Secure</div>
+            <div class="project-desc">Lead Rescue automates customer call analysis for businesses, processing 10–50 calls in minutes. AI-driven insights, real-time alerts, and lead “heat” analysis boost appointment rates and optimize conversions. Automated routing and detailed breakdowns enhance employee training and operational efficiency.</div>
+            <div class="project-tags"><span class="tag">AI</span><span class="tag">NLP</span><span
+                class="tag">Node.js</span><span class="tag">WebRTC</span><span class="tag">GPT-4</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(2)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
             </div>
-
-            <h3 class="h3">Experience</h3>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h3 timeline-item-title">Ality</h4>
-              <h4 class="h4 timeline-item-title">Lead AI / ML Enginer</h4>
-
-              <span>Jan 2025 — Present</span>
-
-              <p class="timeline-text">
-                -Built and deployed 5+ LLM-based agents using LangChain and OpenAI APIs, automating client onboarding and internal knowledge management
-              </p>
-              <p class="timeline-text">
-                -Developed a custom RAG system with FAISS and Pinecone, improving support query resolution accuracy by 42%.
-              </p>
-              <p class="timeline-text">
-                -Designed an evaluation dashboard with BLEU and F1 scoring to track performance of domain-specific GPT-4 models.
-              </p>
-              <p class="timeline-text">
-                -Reduced model hallucinations by 28% through structured prompt templates and prompt guardrails.Leverage AI-assisted development tools (Claude Code, Cursor, GitHub Copilot) to enhance productivity and code quality.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h3 timeline-item-title">Maomi Stars</h4>
-              <h4 class="h4 timeline-item-title">AI Enginer</h4>
-
-              <span>Sep 2021 — Aug 2022</span>
-
-              <p class="timeline-text">
-                -Developed an AI-powered storytelling platform for multilingual children aged 4–7, generating personalized stories to support early language learning
-              </p>
-              <p class="timeline-text">
-                -Deployed RAG-based AI agents on Azure and AWS using Bedrock and Vertex AI for enterprise knowledge retrieval.
-              </p>
-              <p class="timeline-text">
-                -Designed an evaluation dashboard with BLEU and F1 scoring to track performance of domain-specific GPT-4 models.
-              </p>
-              <p class="timeline-text">
-                -Integrated LangGraph-based agentic workflows into an enterprise chatbot that handled 6K+ weekly queries with 91% success rate.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h3 timeline-item-title">BuildThe Tech</h4>
-              <h4 class="h4 timeline-item-title">FullStack Enginer</h4>
-
-              <span>Sep 2018 — Aug 2021</span>
-
-              <p class="timeline-text">
-                -Maintained a large-scale home services marketplace platform in collaboration with product, design, and backend teams, contributing to a 30% increase in customer satisfaction.
-              </p>
-              <p class="timeline-text">
-                -Besigned and developed real-time communication solutions using AngularJS, React.js, Socket.io, and related technologies, resulting in improved collaboration and data synchronization.
-              </p>
-              <p class="timeline-text">
-                -Followed best practices for modularity, testability, performance, and maintainability while developing a SaaS platform using React and Node.js.
-              </p>
-              <p class="timeline-text">
-                -Worked within an Agile methodology, participating in two-week sprints and daily scrum meetings to effectively meet project timelines and collaborate closely with other engineers.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h3 timeline-item-title">White Widget</h4>
-              <h4 class="h4 timeline-item-title">FullStack Enginer</h4>
-
-              <span>Sep 2022 — Dec 2024</span>
-
-              <p class="timeline-text">
-                -Developed secure backend integrations using PlayFab Cloud Script (Python), connecting web and game services. Integrated smart contracts with Ethers.js and enabled wallet connectivity via Wagmi.
-              </p>
-              <p class="timeline-text">
-                -Built responsive front-end interfaces using React (TypeScript) and Redux, alongside scalable back-end APIs with Node.js and Express. Integrated solutions across web and Unity platforms.
-              </p>
-              <p class="timeline-text">
-                -Designed an evaluation dashboard with BLEU and F1 scoring to track performance of domain-specific GPT-4 models.
-              </p>
-              <p class="timeline-text">
-                -Integrated LangGraph-based agentic workflows into an enterprise chatbot that handled 6K+ weekly queries with 91% success rate.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Spark SQL</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Apache Kafka</h5>
-                <data value="83">83%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 83%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Amazon Kinesis</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python(TensorFLow, PyTorch, Scikit-learn)</h5>
-                <data value="98">98%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 98%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">LLM, DeepLearning, NLP</h5>
-                <data value="95">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Lang Chain, Gen AI, Agentic AI</h5>
-                <data value="98">98%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 98%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Vendor Databases, RAG</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">OpenAI API, LangChain, Hugging Face</h5>
-                <data value="98">98%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 98%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Frontend Development(React, Angular)</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Backend Development(Node.js, Laravel, Django, Flask)</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>AI Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
+        </div>
+
+        <!-- 4 -->
+        <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(3)" style="cursor:pointer">
+            <img src="assets/images/projects/CREXI.png" alt="Evaluation Dashboard"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
           </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="ai development">
-              <a href="https://botsonic.com/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">BotSonic</h3>
-
-                <p class="project-category">AI development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ai development">
-              <a href="https://bright-river.com/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Bright River</h3>
-
-                <p class="project-category">AI & Backend development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://lead-rescue.com/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Lead ReScue</h3>
-
-                <p class="project-category">AI & Backend Integrament</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="ai development">
-              <a href="https://www.convozen.ai/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Convozen</h3>
-
-                <p class="project-category">AI Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://app.addlly.ai/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Addlly AI</h3>
-
-                <p class="project-category">AI Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Agrippon</h3>
-
-                <p class="project-category">Full Stack development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://www.crexi.com/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">CREXI</h3>
-
-                <p class="project-category">Full Stack Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <!-- <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article> -->
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          <div class="project-body">
+            <div class="project-cat">Real Estate</div>
+            <div class="project-title">CREXI</div>
+            <div class="project-desc">A B2B vendor marketplace for property managers.</div>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">Redux</span><span class="tag">Python/Django</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(3)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
             </div>
+          </div>
+        </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        <!-- 5 -->
+        <!-- <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(4)" style="cursor:pointer">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="EdTech Storytelling"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">EdTech AI</div>
+            <div class="project-title">Multilingual AI Storytelling Platform</div>
+            <div class="project-desc">Generative AI platform for children aged 4–7 creating personalized multilingual
+              stories with Amazon Polly text-to-speech.</div>
+            <div class="project-tags"><span class="tag">Generative AI</span><span class="tag">Amazon Polly</span><span
+                class="tag">Python</span><span class="tag">Flask</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(4)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
+            </div>
+          </div>
+        </div> -->
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+        <!-- 6 -->
+        <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(5)" style="cursor:pointer">
+            <img src="assets/images/projects/Agrippon.png" alt="Enterprise Chatbot"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">HealthCare Indsutry</div>
+            <div class="project-title">Agrippon</div>
+            <div class="project-desc">Agrippon is a cloud-based, HIPAA-compliant communication platform designed for medical and dental billing professionals. </div>
+            <div class="project-tags">
+              <span class="tag">Angular</span><span class="tag">Azure</span><span class="tag">.NET</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(5)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
+            </div>
+          </div>
+        </div>
 
-          </form>
+        <!-- 7 -->
+        <!-- <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(6)" style="cursor:pointer">
+            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&q=80" alt="MLOps Pipeline"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">MLOps</div>
+            <div class="project-title">ML Retraining &amp; Feedback Loop System</div>
+            <div class="project-desc">Automated ML retraining pipeline with Databricks and MLflow for continuous model
+              improvement from production feedback.</div>
+            <div class="project-tags"><span class="tag">Databricks</span><span class="tag">MLflow</span><span
+                class="tag">Python</span><span class="tag">MLOps</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(6)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
+            </div>
+          </div>
+        </div> -->
 
-        </section>
+        <!-- 8 -->
+        <!-- <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(7)" style="cursor:pointer">
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80" alt="Prompt Guardrails"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">Prompt Engineering</div>
+            <div class="project-title">Hallucination Reduction via Guardrails</div>
+            <div class="project-desc">Structured prompt guardrail system reducing LLM hallucinations by 28% in
+              production healthcare contexts.</div>
+            <div class="project-tags"><span class="tag">Prompt Engineering</span><span class="tag">LLM</span><span
+                class="tag">OpenAI</span><span class="tag">Python</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(7)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
+            </div>
+          </div>
+        </div> -->
 
-      </article>
+        <!-- 9 -->
+        <!-- <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(8)" style="cursor:pointer">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="Marketplace Platform"
+              loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">Full-Stack</div>
+            <div class="project-title">Home Services Marketplace Platform</div>
+            <div class="project-desc">Full-stack marketplace with real-time booking, Socket.io live updates, and
+              React/Node.js stack — boosting satisfaction by 30%.</div>
+            <div class="project-tags"><span class="tag">React</span><span class="tag">Node.js</span><span
+                class="tag">Socket.io</span><span class="tag">AngularJS</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(8)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
+            </div>
+          </div>
+        </div> -->
 
+      </div>
+    </section>
+
+    <!-- FOCUS -->
+    <section id="focus">
+      <div class="section-header" style="position:relative">
+        <div class="section-watermark">03</div>
+        <div class="section-header-inner">
+          <p class="section-label">What I specialize in</p>
+          <h2 class="section-title"><span>Areas of Focus</span></h2>
+        </div>
+      </div>
+      <div class="focus-grid">
+        <div class="focus-card">
+          <div class="focus-icon health"><i class="fa-solid fa-hospital"></i></div>
+          <div class="focus-title">Healthcare AI</div>
+          <p class="focus-desc">I build AI-powered healthcare systems that are secure, compliant, and clinically
+            meaningful. From architecting HIPAA-compliant platforms on AWS to deploying LLM agents that automate patient
+            onboarding and clinical workflows my work reduces operational overhead while keeping patient data safe. I've
+            improved support query resolution accuracy by 82% using custom RAG pipelines, and cut model hallucinations
+            by 28% through structured prompt guardrails. Every solution I build in this space is designed with trust,
+            accuracy, and regulatory compliance at its core.</p>
+          <div class="focus-tags">
+            <span class="focus-tag">HIPAA Compliance</span>
+            <span class="focus-tag">LLM Agents</span>
+            <span class="focus-tag">RAG Pipelines</span>
+            <span class="focus-tag">AWS Healthcare</span>
+            <span class="focus-tag">Clinical AI</span>
+          </div>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon edu"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="focus-title">Learning &amp; Education AI</div>
+          <p class="focus-desc">I design AI-driven learning experiences that adapt to the learner not the other way
+            around. At Maomi Stars, I built a multilingual storytelling platform for children aged 47, combining
+            generative AI with Amazon Polly text-to-speech to deliver personalized, interactive stories that support
+            early language acquisition. I integrate LangGraph agentic workflows to create dynamic, context-aware
+            educational flows, and leverage feedback loops with Databricks and MLflow to continuously improve model
+            quality. My goal is to make learning more accessible, engaging, and effective through intelligent
+            technology.</p>
+          <div class="focus-tags">
+            <span class="focus-tag">Generative AI</span>
+            <span class="focus-tag">Amazon Polly</span>
+            <span class="focus-tag">LangGraph</span>
+            <span class="focus-tag">Adaptive Learning</span>
+            <span class="focus-tag">EdTech</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-alt">
+      <div class="section-header" style="position:relative">
+        <div class="section-watermark">04</div>
+        <div class="section-header-inner">
+          <p class="section-label">Where I've worked</p>
+          <h2 class="section-title"><span>Experience</span></h2>
+        </div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div class="timeline-company">Ality</div>
+            <div class="timeline-role">Lead Software &amp; AI/ML Engineer</div>
+            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Jan 2025 Present</div>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Led AI/ML architecture design for a HIPAA-compliant healthcare platform serving thousands of patients
+            </li>
+            <li>Built and deployed LLM agents for clinical onboarding and workflow automation using LangChain and OpenAI
+            </li>
+            <li>Engineered custom RAG pipelines with FAISS and Pinecone, improving query resolution accuracy by 82%</li>
+            <li>Reduced LLM hallucinations by 28% through structured prompt guardrails and constrained generation</li>
+            <li>Architected secure AWS infrastructure including Lambda, Kinesis, and Bedrock integrations</li>
+          </ul>
+          <div class="timeline-tags">
+            <span class="timeline-tag">LLM Agents</span><span class="timeline-tag">RAG</span><span
+              class="timeline-tag">AWS</span><span class="timeline-tag">HIPAA</span><span
+              class="timeline-tag">LangChain</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div class="timeline-company">Maomi Stars</div>
+            <div class="timeline-role">AI Engineer</div>
+            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2022 Dec 2024</div>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Built a multilingual AI storytelling platform for children aged 4 ~ 7 using generative AI and
+              Python/Flask</li>
+            <li>Integrated Amazon Polly for natural text-to-speech narration across multiple languages</li>
+            <li>Implemented LangGraph agentic workflows for dynamic, context-aware story generation</li>
+            <li>Established ML feedback loops with Databricks and MLflow to continuously improve model quality</li>
+            <li>Achieved 91% chatbot success rate on the enterprise support assistant</li>
+          </ul>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Generative AI</span><span class="timeline-tag">Amazon Polly</span><span
+              class="timeline-tag">LangGraph</span><span class="timeline-tag">Databricks</span><span
+              class="timeline-tag">MLflow</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div class="timeline-company">BuildTheTech</div>
+            <div class="timeline-role">FullStack Engineer</div>
+            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2021 Aug 2022</div>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Developed full-stack web applications for clients across multiple industries</li>
+            <li>Built RESTful APIs with Node.js and Django, integrating with third-party services</li>
+            <li>Implemented real-time features using Socket.io for live notifications and chat</li>
+            <li>Delivered the Home Services Marketplace platform from design to production</li>
+          </ul>
+          <div class="timeline-tags">
+            <span class="timeline-tag">React</span><span class="timeline-tag">Node.js</span><span
+              class="timeline-tag">Django</span><span class="timeline-tag">Socket.io</span><span
+              class="timeline-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div class="timeline-company">White Widget</div>
+            <div class="timeline-role">Junior FullStack Engineer</div>
+            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2018 Aug 2021</div>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Built and maintained web applications for Australian clients using React and AngularJS</li>
+            <li>Collaborated in Agile/Scrum teams, participating in sprint planning and code reviews</li>
+            <li>Developed reusable component libraries and improved frontend performance</li>
+          </ul>
+          <div class="timeline-tags">
+            <span class="timeline-tag">React</span><span class="timeline-tag">AngularJS</span><span
+              class="timeline-tag">JavaScript</span><span class="timeline-tag">Agile</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
     </div>
+    </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header" style="position:relative">
+        <div class="section-watermark">05</div>
+        <div class="section-header-inner">
+          <p class="section-label">What I work with</p>
+          <h2 class="section-title"><span>Skills</span></h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon fe"><i class="fa-solid fa-desktop"></i></div>
+            <div class="skill-card-title">Frontend</div>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">React</span><span class="skill-pill">TypeScript</span><span
+              class="skill-pill">JavaScript</span><span class="skill-pill">Angular</span><span
+              class="skill-pill">AngularJS</span><span class="skill-pill">Redux</span><span
+              class="skill-pill">HTML5</span><span class="skill-pill">CSS3</span><span class="skill-pill">Responsive
+              Design</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon be"><i class="fa-solid fa-server"></i></div>
+            <div class="skill-card-title">Backend</div>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Node.js</span><span class="skill-pill">Python</span><span
+              class="skill-pill">Django</span><span class="skill-pill">Flask</span><span
+              class="skill-pill">Express</span><span class="skill-pill">REST APIs</span><span
+              class="skill-pill">SQL</span><span class="skill-pill">MongoDB</span><span
+              class="skill-pill">Socket.io</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon ai"><i class="fa-solid fa-brain"></i></div>
+            <div class="skill-card-title">AI / ML</div>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">LLMs</span><span class="skill-pill">RAG</span><span
+              class="skill-pill">LangChain</span><span class="skill-pill">LangGraph</span><span
+              class="skill-pill">OpenAI API</span><span class="skill-pill">FAISS</span><span
+              class="skill-pill">Pinecone</span><span class="skill-pill">Prompt Engineering</span><span
+              class="skill-pill">MLflow</span><span class="skill-pill">Databricks</span><span class="skill-pill">BLEU /
+              F1</span><span class="skill-pill">GPT-4</span><span class="skill-pill">Deep Learning</span><span
+              class="skill-pill">Generative AI</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon cloud"><i class="fa-solid fa-cloud"></i></div>
+            <div class="skill-card-title">Cloud &amp; DevOps</div>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">AWS Lambda</span><span class="skill-pill">AWS Kinesis</span><span
+              class="skill-pill">AWS Bedrock</span><span class="skill-pill">Amazon Polly</span><span
+              class="skill-pill">Azure</span><span class="skill-pill">Vertex AI</span><span class="skill-pill">GitHub
+              Copilot</span><span class="skill-pill">Claude Code</span><span class="skill-pill">Cursor</span><span
+              class="skill-pill">Git / GitHub</span><span class="skill-pill">Jira</span><span class="skill-pill">Agile /
+              Scrum</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section-alt">
+      <div class="section-header" style="position:relative">
+        <div class="section-watermark">06</div>
+        <div class="section-header-inner">
+          <p class="section-label">Academic background</p>
+          <h2 class="section-title"><span>Education</span></h2>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <div class="edu-school">University of Makati</div>
+          <div class="edu-degree">Bachelor of Computer Science</div>
+          <div class="edu-period">2014 &ndash; 2018</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header" style="position:relative">
+        <div class="section-watermark">07</div>
+        <div class="section-header-inner">
+          <p class="section-label">Let's connect</p>
+          <h2 class="section-title"><span>Get In Touch</span></h2>
+        </div>
+      </div>
+      <div class="contact-inner">
+        <p class="contact-desc">I'm open to new opportunities in Software and AI/ML engineering. Whether
+          you have a project in mind, want to collaborate, or just want to say hi &mdash; my inbox is always open.</p>
+        <div class="contact-btns">
+          <a href="mailto:carldev.patdu@gmail.com" class="btn-primary"><i class="fa-solid fa-envelope"></i>
+            carldev.patdu@gmail.com</a>
+          <a href="https://www.linkedin.com/in/carl-patdu-a37a6938b/" target="_blank" rel="noopener"
+            class="btn-indigo"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Designed &amp; built by <span>Carl Patdu</span> &mdash; Software &amp; AI/ML Engineer</p>
+    </footer>
 
   </main>
 
+  <!-- IMAGE GALLERY MODAL -->
+  <div class="gallery-overlay" id="galleryOverlay" role="dialog" aria-modal="true">
+    <div class="gallery-box" id="galleryBox">
+      <div class="gallery-viewer">
+        <button class="gallery-close" id="galleryClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <img id="galleryMainImg" src="" alt="">
+        <button class="gallery-nav prev" id="galleryPrev" aria-label="Previous"><i
+            class="fa-solid fa-chevron-left"></i></button>
+        <button class="gallery-nav next" id="galleryNext" aria-label="Next"><i
+            class="fa-solid fa-chevron-right"></i></button>
+        <div class="gallery-counter" id="galleryCounter">1 / 3</div>
+      </div>
+      <div class="gallery-thumbs" id="galleryThumbs"></div>
+      <div class="gallery-info">
+        <div class="gallery-cat" id="galleryCat"></div>
+        <div class="gallery-title" id="galleryTitle"></div>
+        <div class="gallery-desc" id="galleryDesc"></div>
+        <hr class="gallery-divider">
+        <div class="gallery-highlights" id="galleryHighlights"></div>
+        <div class="gallery-section-label">Key Features</div>
+        <ul class="gallery-bullets" id="galleryBullets"></ul>
+        <div class="gallery-section-label">Tech Stack</div>
+        <div class="gallery-tags" id="galleryTags"></div>
+      </div>
+    </div>
+  </div>
 
+  <!-- BACK TO TOP -->
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></a>
 
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
 </body>
 
 </html>

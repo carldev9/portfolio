@@ -1,0 +1,26 @@
+/* ============================================================
+   RESPONSIVE â€” Tablet and mobile breakpoints
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  section { padding: 60px 40px; }
+  #home { padding: 0 40px; }
+  .portfolio-grid { grid-template-columns: repeat(2,1fr); }
+  .about-stats { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 768px) {
+  .sidebar { transform: translateX(-100%); }
+  .sidebar.open { transform: translateX(0); }
+  .hamburger { display: flex; }
+  .main { margin-left: 0; }
+  section { padding: 60px 24px; }
+  #home { padding: 80px 24px 60px; }
+  .hero-content { grid-template-columns: 1fr; gap: 40px; }
+  .hero-name { font-size: 2.6rem; }
+  .focus-grid,
+  .skills-grid,
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .edu-card { padding: 28px 24px; flex-direction: column; }
+  .section-watermark { font-size: 4rem; }
+}
