@@ -94,26 +94,27 @@ const galleryData = [
     ]
   },
   {
-    category: 'EdTech AI',
-    title: 'Multilingual AI Storytelling Platform',
-    description: 'Generative AI platform for children aged 4-7 creating personalized multilingual stories with Amazon Polly text-to-speech.',
+    category: 'GEO with AI',
+    title: 'Crossfill',
+    description: "Led the development of Crossfill's flagship Generative Engine Optimization (GEO) platform, an innovative AI-powered system that optimizes content visibility across AI search engines and LLM-powered platforms.",
     highlights: [
-      { num: '5+', label: 'Languages' },
-      { num: '90%', label: 'Age Range' },
-      { num: 'AWS', label: 'Polly TTS' }
+      { num: '10+', label: 'Languages' },
+      { num: '95%',    label: 'SEO OPTIMIZATION' },
+      { num: 'Real-time', label: 'Monitoring' }
     ],
     bullets: [
-      'Built generative AI story engine producing age-appropriate, personalized narratives',
-      'Integrated Amazon Polly for natural-sounding multilingual text-to-speech narration',
-      'Implemented LangGraph agentic workflows for dynamic, context-aware story branching',
-      'Designed child-safe content guardrails and parental control features'
+      'GEO Scoring Engine: Designed scoring engine to measure GEO score for AI-driven search engines (Perplexity, ChatGPT, Gemini).',
+      'Analytics Dashboard: Developed real-time tracking and reporting system for content performance across multiple AI platforms.',
+      'Content Optimization: Implemented NLP-based content analysis engine to identify optimization opportunities.',
+      'AnswerHub: Integrated AnswerHub, an internal Q&A system powered by OpenAI API, automated manual operations.',
+      'Smart Recommendations: Created AI-powered recommendation system for content optimization strategies.'
     ],
-    tags: ['Generative AI', 'Amazon Polly', 'Python', 'Flask', 'EdTech'],
+    tags: ['React', 'Typescript', 'Flask', 'FastAPI', 'Redux', 'Anthropic', 'OpenAI', 'AWS', 'Docker'],
     images: [
-      'assets/images/gallery/storytelling-1.jpg',
-      'assets/images/gallery/storytelling-2.jpg',
-      'assets/images/gallery/storytelling-3.jpg',
-      'assets/images/gallery/storytelling-4.jpg'
+      'assets/images/projects/crossfill01.png',
+      'assets/images/projects/crossfill02.png',
+      'assets/images/projects/crossfill03.png',
+      'assets/images/projects/crossfill04.png'
     ]
   },
   {
