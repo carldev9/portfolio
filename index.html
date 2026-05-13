@@ -205,7 +205,7 @@
       <div class="about-grid">
         <div class="about-text">
           <p>I'm a Software &amp; AI/ML Engineer with 6+ years of experience building intelligent, production-grade
-            systems. My work sits at the intersection of two domains I care deeply about: Healthcare AI and EdTech where
+            systems. My work sits at the intersection of two domains I care deeply about: AEC AI, Healthcare AI and EdTech where
             technology can genuinely improve lives.</p>
           <p>I specialize in LLM agents, RAG pipelines, and agentic AI workflows using LangChain, LangGraph, and AWS
             Bedrock. I've architected HIPAA-compliant platforms, deployed clinical automation systems, and built
@@ -240,6 +240,49 @@
         <h2 class="section-title"><span>Portfolio</span></h2>
       </div>
       <div class="portfolio-grid">
+
+                <!-- 7 -->
+        <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(6)" style="cursor:pointer">
+            <img src="assets/images/projects/xfiguraAi01.png" alt="MLOps Pipeline" loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">AEC Industry</div>
+            <div class="project-title">xFigura.ai</div>
+            <div class="project-desc">xFigura is an AI-powered ideation platform for architects and designers working
+              across 2D and 3D workflows.</div>
+            <div class="project-tags"><span class="tag">NextJS</span><span class="tag">LLM</span><span
+                class="tag">Canvas API</span><span class="tag">3D visualization</span><span class="tag">NVIDIA Omniverse
+                WebRTC</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(6)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="project-card">
+          <div class="project-thumb" onclick="openGallery(7)" style="cursor:pointer">
+            <img src="assets/images/projects/kiwi01.png" alt="Prompt Guardrails" loading="lazy">
+            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-cat">AEC AI</div>
+            <div class="project-title">Kiwi (MVP)</div>
+            <div class="project-desc">A web-based generative AI platform that enables custom home builders and their
+              clients in the UK to efficiently design, visualize, and accurately
+              estimate costs for custom residential homes.</div>
+            <div class="project-tags"><span class="tag">Next.js</span><span class="tag">LLM</span><span
+                class="tag">Canvas</span><span class="tag">NVIDIA</span><span class="tag">MongoDB</span><span
+                class="tag">2D Editor</span></div>
+            <div class="project-footer">
+              <button class="btn-detail" onclick="openGallery(7)"><i class="fa-solid fa-circle-info"></i> View
+                Details</button>
+            </div>
+          </div>
+        </div>
 
         <!-- 1 -->
         <div class="project-card">
@@ -367,48 +410,6 @@
           </div>
         </div>
 
-        <!-- 7 -->
-        <!-- <div class="project-card">
-          <div class="project-thumb" onclick="openGallery(6)" style="cursor:pointer">
-            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&q=80" alt="MLOps Pipeline"
-              loading="lazy">
-            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
-          </div>
-          <div class="project-body">
-            <div class="project-cat">MLOps</div>
-            <div class="project-title">ML Retraining &amp; Feedback Loop System</div>
-            <div class="project-desc">Automated ML retraining pipeline with Databricks and MLflow for continuous model
-              improvement from production feedback.</div>
-            <div class="project-tags"><span class="tag">Databricks</span><span class="tag">MLflow</span><span
-                class="tag">Python</span><span class="tag">MLOps</span></div>
-            <div class="project-footer">
-              <button class="btn-detail" onclick="openGallery(6)"><i class="fa-solid fa-circle-info"></i> View
-                Details</button>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- 8 -->
-        <!-- <div class="project-card">
-          <div class="project-thumb" onclick="openGallery(7)" style="cursor:pointer">
-            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80" alt="Prompt Guardrails"
-              loading="lazy">
-            <div class="project-thumb-overlay"><i class="fa-solid fa-images"></i></div>
-          </div>
-          <div class="project-body">
-            <div class="project-cat">Prompt Engineering</div>
-            <div class="project-title">Hallucination Reduction via Guardrails</div>
-            <div class="project-desc">Structured prompt guardrail system reducing LLM hallucinations by 28% in
-              production healthcare contexts.</div>
-            <div class="project-tags"><span class="tag">Prompt Engineering</span><span class="tag">LLM</span><span
-                class="tag">OpenAI</span><span class="tag">Python</span></div>
-            <div class="project-footer">
-              <button class="btn-detail" onclick="openGallery(7)"><i class="fa-solid fa-circle-info"></i> View
-                Details</button>
-            </div>
-          </div>
-        </div> -->
-
         <!-- 9 -->
         <!-- <div class="project-card">
           <div class="project-thumb" onclick="openGallery(8)" style="cursor:pointer">
@@ -461,15 +462,15 @@
           </div>
         </div>
         <div class="focus-card">
-          <div class="focus-icon edu"><i class="fa-solid fa-graduation-cap"></i></div>
-          <div class="focus-title">Learning &amp; Education AI</div>
-          <p class="focus-desc">I design AI-driven learning experiences that adapt to the learner not the other way
-            around. At Maomi Stars, I built a multilingual storytelling platform for children aged 47, combining
-            generative AI with Amazon Polly text-to-speech to deliver personalized, interactive stories that support
-            early language acquisition. I integrate LangGraph agentic workflows to create dynamic, context-aware
-            educational flows, and leverage feedback loops with Databricks and MLflow to continuously improve model
-            quality. My goal is to make learning more accessible, engaging, and effective through intelligent
-            technology.</p>
+          <div class="focus-icon edu"><i class="fa-solid fa-building"></i></div>
+          <div class="focus-title">AEC AI</div>
+          <p class="focus-desc">I am familiar with the AEC (Architecture, Engineering, and Construction) industry and
+            have experience building AI-powered digital platforms for design and construction workflows. I understand
+            how architects, engineers, home builders, and clients work together during planning, design, visualization,
+            and cost estimation phases. My experience includes developing web-based tools for floor plan generation,
+            BIM-based 3D modeling, real-time collaboration, and construction cost estimation. I have also worked with
+            technologies commonly used in the AEC space, including BIM workflows, parcel data integration, generative AI
+            systems, and cloud-based 3D visualization platforms.</p>
           <div class="focus-tags">
             <span class="focus-tag">Generative AI</span>
             <span class="focus-tag">Amazon Polly</span>
@@ -497,7 +498,7 @@
           <div class="timeline-header">
             <div class="timeline-company">Ality</div>
             <div class="timeline-role">Lead Software &amp; AI/ML Engineer</div>
-            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Jan 2025 Present</div>
+            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Jan 2025 - Apr 2026</div>
           </div>
           <ul class="timeline-bullets">
             <li>Led AI/ML architecture design for a HIPAA-compliant healthcare platform serving thousands of patients
@@ -520,7 +521,7 @@
           <div class="timeline-header">
             <div class="timeline-company">Maomi Stars</div>
             <div class="timeline-role">AI Engineer</div>
-            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2022 Dec 2024</div>
+            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2022 - Dec 2024</div>
           </div>
           <ul class="timeline-bullets">
             <li>Built a multilingual AI storytelling platform for children aged 4 ~ 7 using generative AI and
@@ -542,7 +543,7 @@
           <div class="timeline-header">
             <div class="timeline-company">BuildTheTech</div>
             <div class="timeline-role">FullStack Engineer</div>
-            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2021 Aug 2022</div>
+            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2021 - Aug 2022</div>
           </div>
           <ul class="timeline-bullets">
             <li>Developed full-stack web applications for clients across multiple industries</li>
@@ -562,7 +563,7 @@
           <div class="timeline-header">
             <div class="timeline-company">White Widget</div>
             <div class="timeline-role">Junior FullStack Engineer</div>
-            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2018 Aug 2021</div>
+            <div class="timeline-period"><i class="fa-regular fa-calendar"></i> Sep 2018 - Aug 2021</div>
           </div>
           <ul class="timeline-bullets">
             <li>Built and maintained web applications for Australian clients using React and AngularJS</li>
