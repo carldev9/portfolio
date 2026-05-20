@@ -4,7 +4,7 @@
 
 /* Typewriter */
 const phrases = [
-    'AEC AI Specialist',
+  'AEC AI Specialist',
   'Healthcare AI Specialist',
   'EdTech Innovator',
   'LLM Agent Builder',

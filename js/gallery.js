@@ -135,49 +135,43 @@ const galleryData = [
     ]
   },
   {
-    category: 'MLOps',
-    title: 'ML Retraining & Feedback Loop System',
-    description: 'Automated ML retraining pipeline with Databricks and MLflow for continuous model improvement from production feedback.',
+    category: 'AEC industry',
+    title: 'xFigura.ai',
+    description: 'xFigura is an AI-powered ideation platform for architects and designers working across 2D and 3D workflows.',
     highlights: [
       { num: 'Auto',  label: 'Retraining' },
       { num: 'MLflow', label: 'Experiment Tracking' },
       { num: 'CI/CD', label: 'Model Deployment' }
     ],
     bullets: [
-      'Built automated retraining triggers based on model drift detection in production',
-      'Used MLflow for full experiment tracking, model registry, and versioning',
-      'Integrated Databricks for distributed training on large-scale feedback datasets',
-      'Implemented A/B testing framework for safe model rollouts with rollback support'
+      'Engineered AI-powered 2D-to-3D ideation workflows enabling rapid architectural concept generation and visualization',
+      'Built real-time collaborative infinite canvas infrastructure for multi-user design exploration and iteration',
+      'Developed multi-model AI orchestration pipelines integrating image, video, and 3D generation systems into a unified platform',
+      'Implemented scalable cloud-native GPU inference and asynchronous processing infrastructure for high-volume creative workflows'
     ],
-    tags: ['Databricks', 'MLflow', 'Python', 'MLOps', 'CI/CD'],
+    tags: ['NextJS', 'LLM', 'Canvas API', '3D visualization', 'NVIDIA Omniverse WebRTC'],
     images: [
-      'assets/images/gallery/mlops-1.jpg',
-      'assets/images/gallery/mlops-2.jpg',
-      'assets/images/gallery/mlops-3.jpg',
-      'assets/images/gallery/mlops-4.jpg'
+      'assets/images/projects/xfiguraAi01.png',
     ]
   },
   {
-    category: 'Prompt Engineering',
-    title: 'Hallucination Reduction via Guardrails',
-    description: 'Structured prompt guardrail system reducing LLM hallucinations by 28% in production healthcare contexts.',
+    category: 'AEC AI',
+    title: 'Kiwi(MVP)',
+    description: 'A web-based generative AI platform that enables custom home builders and their clients in the UK to efficiently design, visualize, and accurately estimate costs for custom residential homes.',
     highlights: [
-      { num: '28%',  label: 'Hallucination Drop' },
-      { num: '3',    label: 'Validation Layers' },
-      { num: 'Prod', label: 'Healthcare Context' }
+      // { num: '28%',  label: 'Hallucination Drop' },
+      // { num: '3',    label: 'Validation Layers' },
+      // { num: 'Prod', label: 'Healthcare Context' }
     ],
     bullets: [
-      'Designed multi-layer prompt guardrails with input sanitization and output validation',
-      'Implemented constrained generation using structured output schemas (JSON mode)',
-      'Built fact-checking layer cross-referencing LLM outputs against trusted knowledge base',
-      'Reduced false positives in clinical recommendations by 28% in production'
+      'Built a web-based generative AI platform enabling UK home builders and clients to design, visualize, and estimate custom residential projects in real time',
+      'Developed natural language–to–design parameter pipelines that translate user prompts into AI-generated floor plans and parametric BIM models',
+      'Engineered scalable React/Next.js and FastAPI architecture integrating generative AI workflows, conversational AI guidance, and UK parcel data APIs',
+      'Implemented browser-based high-fidelity 3D visualization workflows using Nvidia Omniverse cloud infrastructure for interactive design review and client collaboration'
     ],
-    tags: ['Prompt Engineering', 'LLM', 'OpenAI', 'Python', 'Guardrails'],
+    tags: ['React/Next.js', 'Python/FastAPI', 'Generative AI', '3D Viewer', 'Guardrails'],
     images: [
-      'assets/images/gallery/guardrails-1.jpg',
-      'assets/images/gallery/guardrails-2.jpg',
-      'assets/images/gallery/guardrails-3.jpg',
-      'assets/images/gallery/guardrails-4.jpg'
+      'assets/images/projects/kiwi01.png',
     ]
   },
   {
